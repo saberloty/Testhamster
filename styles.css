@@ -1,28 +1,35 @@
+@font-face {
+    font-family: "iran-yekan";
+    src: 
+         url("/keygen/iranyekanwebregularfanum.woff") format("woff");
+}
+
 body {
-    font-family: 'Roboto', sans-serif;
-    background-color: #f5f7fa;
+    font-family: "iran-yekan", sans-serif;
+    background-color: #17153B;
     color: #333;
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 100%;
     margin: 0;
 }
 
 .container {
-    background: #ffffff;
+    background: #2E236C;;
     border-radius: 10px;
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
-    padding: 30px;
+    padding: 10px 30px;
     max-width: 400px;
     width: 100%;
     text-align: center;
+    color:#fff;
 }
 
 h1 {
     margin-bottom: 25px;
     font-size: 24px;
-    color: #007bff;
+    color: #fff;
 }
 
 .grid-container {
@@ -49,12 +56,12 @@ h1 {
 
 .game-option p {
     font-weight: 500;
-    color: #555;
+    color: #fff;
 }
 
 .game-option:hover, .game-option.selected {
     transform: scale(1.05);
-    border-color: #007bff;
+    border-color: #564db0;
 }
 
 .form-group {
@@ -63,10 +70,12 @@ h1 {
 }
 
 label {
+    text-align: center;
     display: block;
     margin-bottom: 8px;
     font-weight: 500;
-    color: #555;
+    color: #fff;
+    padding-top: 20px;
 }
 
 .key-slider {
@@ -91,23 +100,23 @@ label {
     width: 20px;
     height: 20px;
     border-radius: 50%;
-    background: #007bff;
+    background:  #564db0;
     cursor: pointer;
     transition: background 0.3s;
 }
 
 .key-slider input[type="range"]:hover::-webkit-slider-thumb {
-    background: #0056b3;
+    background:  #433D8B;
 }
 
 #keyValue {
     font-size: 18px;
     font-weight: bold;
-    color: #007bff;
+    color: #fff;
 }
 
 button {
-    background-color: #007bff;
+    background-color: #433D8B;
     color: white;
     border: none;
     padding: 12px 20px;
@@ -115,11 +124,12 @@ button {
     border-radius: 8px;
     cursor: pointer;
     transition: background-color 0.3s;
-    margin-top: 20px;
+    margin: 20px;
+    font-family: 'iran-yekan';
 }
 
 button:hover {
-    background-color: #0056b3;
+    background-color: #564db0;
 }
 
 .hidden {
@@ -127,7 +137,7 @@ button:hover {
 }
 
 .progress-bar {
-    background-color: #f5f7fa;
+    background-color: #17153B;
     border-radius: 8px;
     overflow: hidden;
     margin-top: 25px;
@@ -137,7 +147,7 @@ button:hover {
 
 .progress-bar div {
     height: 100%;
-    background-color: #007bff;
+    background-color: #564db0;
     width: 0;
     transition: width 0.5s;
 }
@@ -180,10 +190,10 @@ button:hover {
 .footer {
     margin-top: 25px;
     font-size: 14px;
-    color: #777;
+    color: #aba3a3;
 }
 
 #copyStatus {
     margin-top: 15px;
     color: green;
-}
+    }
