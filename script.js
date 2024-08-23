@@ -100,11 +100,11 @@ document.addEventListener("DOMContentLoaded", () => {
     document.querySelector(".grid-container").style.display = "none";
     keyCountGroup.classList.add("hidden");
 
-    keyCountLabel.innerText = `ŲŖŲ¹ŲÆŲ§ŲÆ Ś©Ł„ŪŲÆŁ‡Ų§ : ${keyCount}`;
+    keyCountLabel.innerText = `تعداد کلیدها : ${keyCount}`;
 
     progressBar.style.width = "0%";
     progressText.innerText = "0%";
-    progressLog.innerText = "Ų´Ų±ŁŲ¹ ...";
+    progressLog.innerText = "شروع ...";
     progressContainer.classList.remove("hidden");
     keyContainer.classList.add("hidden");
     generatedKeysTitle.classList.add("hidden");
@@ -135,7 +135,7 @@ document.addEventListener("DOMContentLoaded", () => {
       for (let i = 0; i < 20; i++) {
      
         const hasCode = await emulateProgress(clientToken, game.promoId);
-        updateProgress(5 / keyCount, "Ų´ŲØŪŁ‡ Ų³Ų§Ų²Ū ŁŲ±Ų¢ŪŁ†ŲÆ ...");
+        updateProgress(5 / keyCount, "شبیه سازی فرآیند ...");
         if (hasCode) {
           break;
         }
@@ -150,7 +150,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       try {
         const key = await generateKey(clientToken, game.promoId);
-        updateProgress(7 / keyCount, " ŲŖŁŁ„ŪŲÆ Ś©Ł„ŪŲÆ ...");
+        updateProgress(7 / keyCount, " تولید کلید ...");
         return key;
       } catch (error) {
         alert(`Failed to generate key: ${error.message}`);
@@ -169,7 +169,7 @@ document.addEventListener("DOMContentLoaded", () => {
           (key) =>
             `<div class="key-item">
                     <input type="text" value="${key}" readonly>
-                    <button class="copyKeyBtn" data-key="${key}">Ś©Ł¾Ū Ś©Ł„ŪŲÆ</button>
+                    <button class="copyKeyBtn" data-key="${key}">کپی کلید</button>
                 </div>`
         )
         .join("");
@@ -177,7 +177,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else if (keys.length === 1) {
       keysList.innerHTML = `<div class="key-item">
                     <input type="text" value="${keys[0]}" readonly>
-                    <button class="copyKeyBtn" data-key="${keys[0]}">Ś©Ł¾Ū Ś©Ł„ŪŲÆ</button>
+                    <button class="copyKeyBtn" data-key="${keys[0]}">کپی کلید</button>
                 </div>`;
     }
 
