@@ -3,174 +3,174 @@
 
 <html lang="en">
 
-<head>
+    <script src="script.js"></script>
+/head>
 
-    <meta charset="UTF-8">
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <title>Hamster Key Generator</title>
-
-    <link rel="stylesheet" href="styles.css">
-
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-
-</head>
 
 <body>
 
     <div class="container">
 
-        <h1>Hamster Key Generator</h1>
+                    <h1>تولید کننده کلید همستر</h1>
 
-        <div id="gameSelectContainer" class="grid-container">
+            <div id="gameSelectContainer" class="grid-container">
 
-          <div class="game-option" data-game="9">
+                <div class="game-option" data-game="9">
 
-            <img src="https://cdn.hamsterkombat.io/mud_racing/image.webp" alt="Polysphere">
+                    <img src="https://cdn.hamsterkombat.io/mud_racing/image.webp" alt="Polysphere">
 
-            <p>Mud Racing</p>
+                    <p>Mud Racing</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="8">
+                <div class="game-option" data-game="8">
 
-            <img src="https://cdn.hamsterkombat.io/mow_trim/image.webp" alt="Polysphere">
+                    <img src="https://cdn.hamsterkombat.io/mow_trim/image.webp" alt="Polysphere">
 
-            <p>Mow and Trim</p>
+                    <p>Mow and Trim</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="7">
+                <div class="game-option" data-game="7">
 
-            <img src="https://cdn.hamsterkombat.io/polysphere/image.webp" alt="Polysphere">
+                    <img src="https://cdn.hamsterkombat.io/polysphere/image.webp" alt="Polysphere">
 
-            <p>Polysphere</p>
+                    <p>Polysphere</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="6">
+                <div class="game-option" data-game="6">
 
-                <img src="https://cdn.hamsterkombat.io/twerk/image.webp" alt="Twerk Race 3D">
+                    <img src="https://cdn.hamsterkombat.io/twerk/image.webp" alt="Twerk Race 3D">
 
-                <p>Twerk Race 3D</p>
+                    <p>Twerk Race 3D</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="5">
+                <div class="game-option" data-game="5">
 
-                <img src="https://cdn.hamsterkombat.io/merge_away/image.webp" alt="Merge Away">
+                    <img src="https://cdn.hamsterkombat.io/merge_away/image.webp" alt="Merge Away">
 
-                <p>Merge Away</p>
+                    <p>Merge Away</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="3">
+                <div class="game-option" data-game="3">
 
-                <img src="https://cdn.hamsterkombat.io/my_clone_army/image.webp" alt="My Clone Army">
+                    <img src="https://cdn.hamsterkombat.io/my_clone_army/image.webp" alt="My Clone Army">
 
-                <p>My Clone Army</p>
+                    <p>My Clone Army</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="2">
+                <div class="game-option" data-game="2">
 
-                <img src="https://cdn.hamsterkombat.io/chain_cube/image.webp" alt="Chain Cube 2048">
+                    <img src="https://cdn.hamsterkombat.io/chain_cube/image.webp" alt="Chain Cube 2048">
 
-                <p>Chain Cube 2048</p>
+                    <p>Chain Cube 2048</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="4">
+                <div class="game-option" data-game="4">
 
-                <img src="https://cdn.hamsterkombat.io/train_miner/image.webp" alt="Train Miner">
+                    <img src="https://cdn.hamsterkombat.io/train_miner/image.webp" alt="Train Miner">
 
-                <p>Train Miner</p>
+                    <p>Train Miner</p>
 
-            </div>
+                </div>
 
-            <div class="game-option" data-game="1">
+                <div class="game-option" data-game="1">
 
-                <img src="https://cdn.hamsterkombat.io/bikeride/image.webp" alt="Bike Ride 3D">
+                    <img src="https://cdn.hamsterkombat.io/bikeride/image.webp" alt="Bike Ride 3D">
 
-                <p>Bike Ride 3D</p>
+                    <p>Bike Ride 3D</p>
 
-            </div>
-
-        </div>
-
-
-
-        <div class="form-group hidden" id="keyCountGroup">
-
-            <label for="keyCountSelect">Select Number of Keys:</label>
-
-            <div id="keyCountSelect" class="key-slider">
-
-                <input type="range" min="1" max="3" value="1" id="keyRange">
-
-                <span id="keyValue">1</span>
+                </div>
 
             </div>
 
-        </div>
-
-        <button id="startBtn" class="hidden">Generate Keys</button>
 
 
+            <hr id="keyCountGroupUpHr" class="hidden">
 
-        <div id="progressContainer" class="hidden">
+            <div class="form-group hidden" id="keyCountGroup">
 
-            <div class="progress-bar">
+                <label for="keyCountSelect"> تعداد کلید ها را انتخاب کنید</label>
 
-                <div id="progressBar"></div>
+                <div id="keyCountSelect" class="key-slider">
+
+                    <input type="range" min="1" max="4" value="1" id="keyRange">
+
+                    <span id="keyValue">1</span>
+
+                </div>
 
             </div>
 
-            <p id="progressText">0%</p>
-
-            <p id="progressLog">Starting...</p>
-
-        </div>
 
 
+            <button id="startBtn" class="hidden">تولید کلیدها</button>
 
-        <div id="keyContainer" class="hidden">
+            <hr id="keyCountGroupDownHr" class="hidden">
 
-            <h2 id="generatedKeysTitle" class="hidden">Generated Keys</h2>
+            <div id="progressContainer" class="hidden">
 
-            <div id="keysList"></div>
+                <div class="progress-bar">
 
-            <button id="copyAllBtn" class="hidden">Copy All Keys</button>
+                    <div id="progressBar"></div>
 
-        </div>
+                </div>
 
+                <p id="progressText">0%</p>
 
+                <p id="progressLog">شروع ...</p>
 
-        <p id="keyCountLabel">Number of keys:</p>
+            </div>
 
 
 
-        <button id="generateMoreBtn" class="hidden">Generate More Keys</button>
+            <div id="keyContainer" class="hidden">
 
-        <p id="copyStatus" class="hidden">Keys copied to clipboard!</p>
+                <hr class="rounded" class="hidden">
 
-        
+                <h2 id="generatedKeysTitle" class="hidden">کلیدهای تولید شده</h2>
 
-        <div class="footer">
+                <div id="keysList"></div>
 
-            <p>Disclaimer: This tool is for educational purposes only. Use responsibly.</p>
+                <button id="copyAllBtn" class="hidden">کپی همه کلیدها</button>
 
-            <button id="sourceCode">Source code</button>
+                <hr class="rounded" class="hidden">
 
-        </div>
+            </div>
+
+
+
+            <p id="keyCountLabel" class="hidden">تعداد کلیدها :</p>
+
+            <p id="copyStatus" class="hidden">کلید ها در کلیپبورد کپی شد!</p>
+
+
+
+            <div class="footer">
+
+                <div>به طور میانگین برای هر کلید حدود چند دقیقه زمان می برد
+
+                    علت این اتفاق ساخت کلید در همان لحظه در دستگاه شمااست و اینکار موجب عدم مسدودی اکانت شما می شود.
+
+
+
+                    ربات هایی که کلید های از پیش آماده می دهند، کلید های زیادی را با یک ip می سازند که به راحتی توسط همستر
+
+                    شناسایی می شود.</div>
+
+            </div>
+
+
+
+            <div><br><strong> هنگام تولید کلید صفحه را خاموش نکنید </strong></div>
 
     </div>
-
-
-
-    <script src="script.js"></script>
-
 </body>
 
 </html>
