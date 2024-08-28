@@ -98,83 +98,107 @@
             </div>
 
         </div>
+                <div class="form-group hidden" id="keyCountGroup"> 
 
+            <label for="keyCountSelect">تعداد کلید هارا انتخاب کنید:</label> 
 
+            <div id="keyCountSelect" class="key-slider"> 
 
-        <div class="form-group hidden" id="keyCountGroup">
+                <input type="range" min="1" max="10" value="1" id="keyRange"> 
 
-            <label for="keyCountSelect">تعداد کلید هارا انتخاب کنید:</label>
+                <span id="keyValue">1</span> 
 
-            <div id="keyCountSelect" class="key-slider">
+            </div> 
 
-                <input type="range" min="1" max="4" value="1" id="keyRange">
+        </div> 
 
-                <span id="keyValue">1</span>
+         
+
+        <button id="startBtn" class="hidden">شروع استخراج</button> 
+
+        <hr id="keyCountGroupUpHr" class="hidden">
+
+            <div class="form-group hidden" id="keyCountGroup">
+
+                <label for="keyCountSelect"> تعداد کلید ها را انتخاب کنید</label>
+
+                <div id="keyCountSelect" class="key-slider">
+
+                    <input type="range" min="1" max="4" value="1" id="keyRange">
+
+                    <span id="keyValue">1</span>
+
+                </div>
 
             </div>
 
-        </div>
-
-        
-
-        <button id="startBtn" class="hidden">شروع استخراج</button>
 
 
+            <button id="startBtn" class="hidden">تولید کلیدها</button>
 
-        <div id="progressContainer" class="hidden">
+            <hr id="keyCountGroupDownHr" class="hidden">
 
-            <div class="progress-bar">
+            <div id="progressContainer" class="hidden">
 
-                <div id="progressBar"></div>
+                <div class="progress-bar">
+
+                    <div id="progressBar"></div>
+
+                </div>
+
+                <p id="progressText">0%</p>
+
+                <p id="progressLog">شروع ...</p>
 
             </div>
 
-            <p id="progressText">0%</p>
-
-            <p id="progressLog">درحال استخراج... لطفا بین 1 الی 10 دقیقه صبر کنید</p>
-
-        </div>
 
 
+            <div id="keyContainer" class="hidden">
 
-        <div id="keyContainer" class="hidden">
+                <hr class="rounded" class="hidden">
 
-            <h2 id="generatedKeysTitle" class="hidden">کلید های استخراج شده</h2>
+                <h2 id="generatedKeysTitle" class="hidden">کلیدهای تولید شده</h2>
 
-            <div id="keysList"></div>
+                <div id="keysList"></div>
 
-            <button id="copyAllBtn" class="hidden">کپی کردن همه کلید ها</button>
+                <button id="copyAllBtn" class="hidden">کپی همه کلیدها</button>
 
-        </div>
+                <hr class="rounded" class="hidden">
+
+            </div>
 
 
 
-        <p id="keyCountLabel">تعداد کلید ها:</p>
+            <p id="keyCountLabel" class="hidden">تعداد کلیدها :</p>
 
-        <button id="generateMoreBtn" class="hidden">استخراج دوباره</button>
+            <p id="copyStatus" class="hidden">کلید ها در کلیپبورد کپی شد!</p>
 
-        <p id="copyStatus" class="hidden">Keys copied to clipboard!</p>
-
-        
+       
 
         <div class="footer">
 
-            <p>این ربات کلید را مستقیم از سمت خود سرور همستر میگیرد. با ریسک خودتان استفاده کنید. اگه توی کلید گرفتن مشکل دارید حتما فیلترشکن استفاده کنید یا ایپی خودتون رو تغییر بدید. از سوال در پیوی سازنده پرهیز کنید.</p>
 
-            <a href="https://t.me/freeairdroplandSUP" target="_blank">
 
-                <button id="sourceCode">ارتباط با سازنده</button>
+<button id="telegramAdminBtn" onclick="window.open('https://t.me/hamster_key20bot/419', '_blank')">راهنما</button>
 
-            </a>
+<button id="telegramChannelBtn" onclick="window.open('https://t.me/hamster_key20bot', '_blank')">کانال ما</button>
 
-        </div>
+<p>طراحی شده توسط صابر</p>
+
+ </div> 
 
     </div>
 
-
+    
 
     <script src="script.js"></script>
 
 </body>
 
 </html>
+
+
+
+        
+        
