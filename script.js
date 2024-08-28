@@ -51,9 +51,7 @@ document.addEventListener("DOMContentLoaded", () => {
             name: 'Cafe Dash',
             appToken: 'bc0971b8-04df-4e72-8a3e-ec4dc663cd11',
             promoId: 'bc0971b8-04df-4e72-8a3e-ec4dc663cd11',
-            timing: 20000, // 20 seconds
-            attempts: 20,
-  }
+              }
   };
 
   const gameOptions = document.querySelectorAll(".game-option");
